@@ -1,0 +1,5 @@
+<div *ngIf="post.available">
+    <p style="color:red">Commented</p>
+
+    <button class="btn btn-warning" (click)="enableComment.emit()">Enable comment</button>
+</div>
