@@ -12,6 +12,7 @@ export class PostComponent implements OnInit {
   constructor(private postService: PostService) { }
 
   postList: any;
+  message: string = '';
   ngOnInit(): void {
     this.getPostList();
   }
@@ -23,8 +24,8 @@ export class PostComponent implements OnInit {
     console.log(this.postList)
   }
 
-  enableComment() {
-    window.alert("Comment enabled")
+  enableComment(message: string) {
+    this.message = message;
   }
 
 }

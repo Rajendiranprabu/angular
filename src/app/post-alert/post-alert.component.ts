@@ -8,11 +8,17 @@ import { EventEmitter } from '@angular/core'
 })
 export class PostAlertComponent implements OnInit {
 
-  @Input("available") post: any;
-  @Output() enableComment = new EventEmitter()
+  // @Input("available") post: any;
+  @Output() comment = new EventEmitter();
+
+  message: string = "positive"
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showComment() {
+    this.comment.emit(this.message)
   }
 
 }

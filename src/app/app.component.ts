@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Post App';
+  title = 'Demo App';
+
+
+  eventHandler() {
+    console.log("Event triggered")
+  }
 }

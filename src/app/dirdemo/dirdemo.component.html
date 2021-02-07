@@ -1,0 +1,17 @@
+<div>
+
+    <h1 [ngClass]="{'simpletext':fontColor}">Hello Text</h1>
+    <button class="btn btn-primary" (click)="changeText()">Success</button>
+</div>
+
+<div *ngIf=message>
+    from if {{message}}
+</div>
+
+BirthDate : {{birthDate}}
+<br>
+{{birthDate|date:'shortDate'}}
+<br>
+{{birthDate|date:'fullDate'}}
+<br>
+{{birthDate|date:'HH:MM'}}

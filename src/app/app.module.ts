@@ -9,19 +9,29 @@ import { PostService } from './post.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DirdemoComponent } from './dirdemo/dirdemo.component';
+import { CreatepostComponent } from './createpost/createpost.component';
+import { CaseconverterDirective } from './caseconverter.directive';
+import { ReactFormDemoComponent } from './react-form-demo/react-form-demo.component'
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
     PostAlertComponent,
     HomeComponent,
-    UsersComponent
+    UsersComponent,
+    DirdemoComponent,
+    CreatepostComponent,
+    CaseconverterDirective,
+    ReactFormDemoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

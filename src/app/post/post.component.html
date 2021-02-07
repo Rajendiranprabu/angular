@@ -1,10 +1,11 @@
 <div *ngFor="let post of postList">
 
-    <h5 style="color:blue">{{post.title}}</h5>
+    <h5 [ngStyle]="{'color':'blue','font-size':'43px'}">{{post.title}}</h5>
     <p>
         {{post.body}}
     </p>
+    <!-- {{message}}
 
-    <app-post-alert [available]="post" (enableComment)="enableComment()"></app-post-alert>
+    <app-post-alert (comment)="enableComment($event)"></app-post-alert> -->
 </div>
 <button class=" btn btn-primary" value="Submit">Submit</button>
